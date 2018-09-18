@@ -1,0 +1,56 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.one, .two{
+	width: 100vw;
+	height: 100vh;
+}
+.one {
+	background-color: darkslategray;
+}
+.two{
+	background-color: cadetblue;
+}
+img{
+	width: 100%;
+	position: absolute;
+}
+.fox{
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	Width: 600px;
+	height: 400px;
+	& .center--middle img{
+		position: absolute;
+		width: 100%;
+		height:100%;
+	}
+	& #cm2{
+		left: -1200px;
+	}
+	& .right--top{
+		position: absolute;
+		width: 200px;
+		right: -10%;
+		top:-30%;
+		z-index: 1;
+		& #rt2{
+			position: absolute;
+			top: -1200px;
+		}
+	}
+	& #lb{
+		position: absolute;
+		left:-10%;
+		bottom:30%;
+		width:200px;
+		& #lb2{
+			position: absolute;
+			bottom: -1200px;
+		}
+	}
+}
